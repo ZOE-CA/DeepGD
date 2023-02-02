@@ -13,14 +13,20 @@ inputs with high fault-revealing power and improves model performance through re
 
 
 Our main contributions are:
+
 1- Proposing BB test selection approach
+
 2- Customized the multi-objective search
+
 3- Validating a DeepGD by approximating faults in DNNs
+
 4- Comparing existing test selection metrics with DeepGD in terms of fault detection abilities and retraining improvement 
 
 
 * [LSA_DSA](LSA_DSA/) folder contains some parts of [1] for computing the LSA and DSA scores.
-
+* [ATS-master_final](ATS-master_final/) folder contains the related code for applying ATS from [].
+* [Baseline_results](Baseline_results/) folder contains some parts of [1] for computing the LSA and DSA scores.
+* [Fault_cluster](Fault_cluster/) folder contains some parts of [1] for computing the LSA and DSA scores.
 Requirements
 ---------------
 You need to first install these Libraries:
