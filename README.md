@@ -1,14 +1,12 @@
 # DeepGD
+This repository is a companion page for the following paper:  “DeepGD: A Multi-Objective Black-Box Test Selection Approach for Deep Neural Networks”, (submitted)
 
-This repository is a companion page for the DeepGD paper 
+This paper is implemented in python on Google Colab .
 
-This paper is implemented in python language with GoogleColab (It is an open-source and Jupyter based environment).
-
-DeepGD is a black-box test selection approach for deep neural networks (DNNs) that uses a customized multi-objective genetic search to guide
-the selection of test inputs with high fault-revealing power. It relies on diversity and uncertainty scores and it only requires 
+This repository is a replication package of DeepGD, a black-box (BB) test selection approach for deep neural networks (DNNs) that uses a customized multi-objective genetic search to guide the selection of test inputs with high fault-revealing power. It relies on diversity and uncertainty scores and it only requires 
 access to the complete test dataset and prediction probabilities of the DNN model. 
-The approach also considers a clustering-based approach to estimate faults
-in DNN models. An empirical evaluation on five DNN models, four datasets, and nine baselines shows that DeepGD provides better guidance for selecting 
+The approach also considers a clustering-based approach to estimate faults in DNN models. 
+An empirical evaluation on five DNN models, four datasets, and nine baselines shows that DeepGD provides better guidance for selecting 
 inputs with high fault-revealing power and improves model performance through retraining.
 
 
@@ -18,7 +16,7 @@ Our main contributions are:
 
 2- Customized the multi-objective search
 
-3- Validating a DeepGD by approximating faults in DNNs
+3- Validating DeepGD by approximating faults in DNNs
 
 4- Comparing existing test selection metrics with DeepGD in terms of fault detection abilities and retraining improvement 
 
@@ -26,8 +24,8 @@ Our main contributions are:
 * [Baseline_results](Baseline_results/) folder contains a selected subsets by each methods through different datasets and models.
 * [Fault_clusters](Fault_clusters/) folder contains DNNs' faults which are saved in it for six different combinations of models & datasets.
 * [Retraining](Retraining/) folder contains the retrained models with the selected subsets of all methods.
-* [LSA_DSA](LSA_DSA/) folder contains some parts of [1] for computing the LSA and DSA scores.
-* [ATS-master_final](ATS-master_final/) folder contains the related code for applying ATS from [].
+* [LSA_DSA](LSA_DSA/) folder contains some parts of [4] for computing the LSA and DSA scores.
+* [ATS-master_final](ATS-master_final/) folder contains the related code for applying ATS from [3].
 
 Requirements
 ---------------
@@ -71,7 +69,7 @@ This is the root directory of the repository. The directory is structured as fol
      |
      |---  Retraining                    The RQ2 experiment.
      |
-     |---  Generating data               Our implamentation for generating test inputs by applying real transformations.
+     |---  Generating data               Our implementation for generating test inputs by applying real transformations.
      
      
   
@@ -89,7 +87,7 @@ models with our selected inputs than with baselines?**_
 Notes
 -----
 
-1- For speed-up, you can use GPU-based TensorFlow by changing the Colab Runtime.
+1- To speed-up the execution, you can use GPU-based TensorFlow by changing the Colab Runtime.
 
 References
 -----
