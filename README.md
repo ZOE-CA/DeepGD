@@ -6,9 +6,11 @@ This paper is implemented in python language with GoogleColab (It is an open-sou
 
 DeepGD is a black-box test selection approach for deep neural networks (DNNs) that uses a customized multi-objective genetic search to guide
 the selection of test inputs with high fault-revealing power. It relies on diversity and uncertainty scores and it only requires 
-access to the complete test dataset and prediction probabilities of the DNN model. The approach also considers a clustering-based approach to estimate faults
+access to the complete test dataset and prediction probabilities of the DNN model. 
+The approach also considers a clustering-based approach to estimate faults
 in DNN models. An empirical evaluation on five DNN models, four datasets, and nine baselines shows that DeepGD provides better guidance for selecting 
 inputs with high fault-revealing power and improves model performance through retraining.
+
 
 Our main contributions are:
 1- Proposing BB test selection approach
