@@ -23,16 +23,19 @@ Our main contributions are:
 4- Comparing existing test selection metrics with DeepGD in terms of fault detection abilities and retraining improvement 
 
 
+* [Baseline_results](Baseline_results/) folder contains a selected subsets by each methods through different datasets and models.
+* [Fault_clusters](Fault_clusters/) folder contains DNNs' faults which are saved in it for six different combinations of models & datasets.
+* [Retraining](Retraining/) folder contains the retrained models with the selected subsets of all methods.
 * [LSA_DSA](LSA_DSA/) folder contains some parts of [1] for computing the LSA and DSA scores.
 * [ATS-master_final](ATS-master_final/) folder contains the related code for applying ATS from [].
-* [Baseline_results](Baseline_results/) folder contains some parts of [1] for computing the LSA and DSA scores.
-* [Fault_cluster](Fault_cluster/) folder contains some parts of [1] for computing the LSA and DSA scores.
+
 Requirements
 ---------------
 You need to first install these Libraries:
   - `!pip install umap-learn`
   - `!pip install tslearn`
   - `!pip install hdbscan`
+  - `!pip install pymoo`
 
 The code was developed and tested based on the following environment:
 
@@ -49,14 +52,8 @@ Here is a documentation on how to use this replication package.
 
 ### Getting started
 
-1. First, you need to upload the repo on your Google drive and run the codes on [Google Colab](https://colab.research.google.com)
-2. The main code that you need to run is ``. This code covers all the datasets and models that we used in the paper, 
-however if you want to test the code on ther models and datasets which are not used in our paper, you need to change two lines of the code in `` that are related to the loading model and the selected layer. 
-To do so please:
+To run the code, you have to upload the repository to Google Drive and open it on Google Colab and just the first line and set your local path and run the code.
 
-Change these lines :
-
-`model= load_model("/content/drive/MyDrive/sadl11/model/model_mnist_LeNet1.h5")`
 
 
 
@@ -68,11 +65,12 @@ This is the root directory of the repository. The directory is structured as fol
     Replication-package
      .
      |
-     |---                     Pre-trained models used in the paper (LeNet-1, LeNet-4, LeNet-5, 12-Layer ConvNet, ResNet20)
+     |---  Final DeepGD                  Customized multi-objective search-based test selection method
      |
-     |---              Random samples (60 subsets with sizes of 100,...,1000) to replicate the paper's results
+     |---  BaseLine methods              All the used test selection baselines that have used in the paper.
      |
-     |---                            The preprocessing time related to VGG feature extaction on MNIST dataset             
+     |---  Retraining                    The RQ2 experiment.
+     
   
 
 Research Questions
