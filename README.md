@@ -84,7 +84,7 @@ _**1- RQ1: Do we find more faults than existing test selection ap-
 proaches with the same testing budget?**_
 
 _**2- RQ2:  Do we more effectively guide the retraining of DNN
-models with our selected inputs than with baselines? **_
+models with our selected inputs than with baselines?**_
 
 Notes
 -----
@@ -94,7 +94,11 @@ Notes
 References
 -----
 1- [DeepGini](https://dl.acm.org/doi/abs/10.1145/3395363.3397357)
+
 2- [Diversity](https://www.researchgate.net/publication/357301807_Black-Box_Testing_of_Deep_Neural_Networks_through_Test_Case_Diversity)
+
 3- [ATS](https://conf.researchr.org/details/icse-2022/icse-2022-papers/184/Adaptive-Test-Selection-for-Deep-Neural-Networks)
+
 4- [Surprise Adequacy](https://github.com/coinse/sadl)
+
 5- [Black-box Safety Analysis and Retraining of DNNs based on Feature Extraction and Clustering](https://www.semanticscholar.org/paper/Black-box-Safety-Analysis-and-Retraining-of-DNNs-on-Attaoui-Fahmy/a29c208751555a4c2d4874070b8555fc53e5a414)
