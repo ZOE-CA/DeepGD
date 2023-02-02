@@ -1,6 +1,5 @@
 # DeepGD
 This repository is a companion page for the following paper:  “DeepGD: A Multi-Objective Black-Box Test Selection Approach for Deep Neural Networks”, (submitted)
-
 This paper is implemented in python on Google Colab .
 
 This repository is a replication package of DeepGD, a black-box (BB) test selection approach for deep neural networks (DNNs) that uses a customized multi-objective genetic search to guide the selection of test inputs with high fault-revealing power. It relies on diversity and uncertainty scores and it only requires 
