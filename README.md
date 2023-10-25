@@ -13,11 +13,11 @@ Our main contributions are:
 
 1- Proposing BB test selection approach
 
-2- Customized the multi-objective search
+2- Customized the multi-objective search and validating by doing an ablation study
 
 3- Validating DeepGD by approximating faults in DNNs
 
-4- Comparing existing test selection metrics with DeepGD in terms of fault detection abilities and retraining improvement 
+4- Comparing existing test selection metrics with DeepGD in terms of fault detection abilities, execution time, diversity, and retraining improvement 
 
 
 * [Baseline_results](Baseline_results/) folder contains a selected subsets by each methods through different datasets and models.
@@ -77,11 +77,27 @@ Research Questions
 ---------------
 Our experimental evaluation answers the research questions below.
 
-_**1- RQ1: Do we find more faults than existing test selection ap-
-proaches with the same testing budget?**_
+_**RQ1: Do we find more faults than existing test selection approaches with the same testing budget?**_
 
-_**2- RQ2:  Do we more effectively guide the retraining of DNN
+_**RQ2:  Do we more effectively guide the retraining of DNN
 models with our selected inputs than with baselines?**_
+
+_**RQ3. Can DeepGD select more diverse test input sets compared to other test selection approaches?**_
+
+_**RQ4. How do DeepGD and baseline approaches compare in terms of computation time?**_
+
+
+Not in the paper:
+-----
+In our study, we would like to emphasize that the use of mispredictions as the sole criterion for evaluating test selection approaches can be misleading and may not accurately reflect the fault detection capabilities of these methods. This is primarily due to the presence of redundant test inputs from a fault prediction standpoint. Therefore, the specific numbers related to mispredicted inputs are not included in the main text of our paper. Instead, they are provided within this replication package, along with other supplementary data.
+
+_**RQ5.How do DeepGD and baseline approaches compare in terms of the number of selected mispredicted inputs?**_
+This research question seeks to determine and quantify the differences between DeepGD and baseline approaches concerning their ability to identify and utilize test inputs that lead to mispredictions.
+This inquiry is prompted by one of the comments received during the review process
+
+![image](https://github.com/ZOE-CA/DeepGD/assets/109688199/cdcbc3b1-dc47-418a-8ba5-196100d156f0)
+
+
 
 Notes
 -----
