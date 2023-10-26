@@ -66,7 +66,7 @@ This is the root directory of the repository. The directory is structured as fol
      |
      |---  BaseLine methods              All the used test selection baselines that have used in the paper.
      |
-     |---  Retraining                    The RQ2 experiment.
+     |---  Retraining                    Retraining experiments.
      |
      |---  Generating data               Our implementation for generating test inputs by applying real transformations.
      
