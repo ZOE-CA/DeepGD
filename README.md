@@ -89,7 +89,7 @@ _**RQ4. How do DeepGD and baseline approaches compare in terms of computation ti
 
 Not in the paper:
 -----
-In our study, we would like to emphasize that the use of mispredictions as the sole criterion for evaluating test selection approaches can be misleading and may not accurately reflect the fault detection capabilities of these methods. This is primarily due to the presence of redundant test inputs from a fault prediction standpoint. Therefore, the specific numbers related to mispredicted inputs are not included in the main text of our paper. Instead, they are provided within this replication package, along with other supplementary data.
+In our study, we would like to emphasize that the use of mispredictions as the only criterion for evaluating test selection approaches can be misleading and may not accurately reflect the fault detection capabilities of these methods. This is primarily due to the possible presence of redundant mispredicted test inputs that can be due to the same fault in the DNN model. Therefore, the specific numbers related to mispredicted inputs are not included in our paper. Instead, they are provided within this replication package, along with other supplementary material.
 
 
 ![image](https://github.com/ZOE-CA/DeepGD/assets/109688199/cdcbc3b1-dc47-418a-8ba5-196100d156f0)
